@@ -20,7 +20,7 @@ const box = new THREE.Mesh(geometry, material);
 scene.add(box);
 
 let isRotating = false;
-let rotationSpeed = 0.25;
+let rotationSpeed = 0.75;
 let rotationDuration = 4500; // 5 seconds
 let rotationStartTime = 0;
 
@@ -42,7 +42,7 @@ function animate() {
       rotationSpeed = 0;
       document.getElementById("win-message").style.display = "block";
     } else {
-      rotationSpeed = (rotationDuration - rotationTime) / rotationDuration * 0.25;
+      rotationSpeed = (rotationDuration - rotationTime) / rotationDuration * (Math.random() * 0.5 + 0.1);
     }
     box.rotation.z += rotationSpeed;
   }
