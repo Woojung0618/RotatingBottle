@@ -23,15 +23,16 @@ button {
     font-size: 20px;
     cursor: pointer;
     z-index: 100;
+    white-space: nowrap;
 }
 
 button:hover {
     color: #fff;
-    background-color: red;
+    background-color: #FF0000;
 }
 
 #win-message {
-    color: red;
+    color: #FF0000;
     position: absolute;
     top: 10%;
     left: 50%;
@@ -41,3 +42,18 @@ button:hover {
     font-size: 50px;
 }
 
+.buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 10%;
+    right: 5%;
+    z-index: 100;
+}
+
+.buttons img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
