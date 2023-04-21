@@ -1,6 +1,8 @@
 # Rotating Bottle
 ### Chat GPT를 이용한 간단한 병돌리기 프로그램
 
+🤩 http://rotate-bottle.s3-website-us-east-1.amazonaws.com/
+
 👉 VSCode extension 중 Easycode (Chat GPT) 이용
 
 
